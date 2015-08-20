@@ -115,7 +115,7 @@ io.configure('development', function(){
 });
 
 var port = process.env.app_port || config.port; // Use the port that Heroku provides or default to 5000
-app.listen(port, function() {
+app.listen(port, config.hostname, function() {
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
 
