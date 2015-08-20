@@ -1,12 +1,12 @@
 module.exports = {
   // configuration here without worrying about the quotes
   development: {
-    hostname: "localhost",
-    port: 5000,
+    hostname: "0.0.0.0",
+    port: 2000,
     packAssets: false
   },
   production: {
-    hostname: "hat.jit.su",
+    hostname: "hatjitsu.robmeerman.co.uk",
     port: 80,
     packAssets: true
   }
