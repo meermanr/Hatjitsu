@@ -169,6 +169,7 @@ function RoomCtrl($scope, $routeParams, $timeout, socket) {
     var seq = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '?'];
     var play = ['A\u2660', '2', '3', '5', '8', '\u2654'];
     var tshirt = ['XL', 'L', 'M', 'S', 'XS', '?'];
+    var plusminus = ['-5', '-2', '-1', '+1', '+2', '+5', '?', '\u2615'];
     switch (val) {
     case ('fib'):
       return fib;
@@ -180,6 +181,8 @@ function RoomCtrl($scope, $routeParams, $timeout, socket) {
       return play;
     case ('tshirt'):
       return tshirt;
+    case ('plusminus'):
+        return plusminus;
     default:
       return [];
     }
